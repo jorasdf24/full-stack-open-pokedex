@@ -1,4 +1,4 @@
-
+import React from 'react'
 import {  Routes, Route, useMatch } from 'react-router-dom'
 import { useApi } from './useApi'
 import LoadingSpinner from './LoadingSpinner'
@@ -34,8 +34,8 @@ const App = () => {
 
   return (
     <Routes>
-      <Route exact path="/" element={<PokemonList pokemonList={pokemonList} />} />
-      <Route exact path="/pokemon/:name" element={
+      <Route exact path='/' element={<PokemonList pokemonList={pokemonList} />} />
+      <Route exact path='/pokemon/:name' element={
         <PokemonPage pokemonList={pokemonList} previous={previous} next={next} />
       } />
     </Routes>
