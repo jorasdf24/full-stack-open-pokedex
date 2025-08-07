@@ -23,7 +23,7 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   webServer: {
-    command: "npm run start-prod",
+    command: "node app.js",
     url: "http://localhost:8080",
     timeout: 30 * 1000,
     reuseExistingServer: !process.env.CI,
