@@ -25,7 +25,7 @@ export default defineConfig({
   webServer: {
     command: "npm run start-prod",
     url: "http://localhost:8080",
-    timeout: 60 * 1000,
+    timeout: 30 * 1000,
     reuseExistingServer: !process.env.CI,
   },
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
