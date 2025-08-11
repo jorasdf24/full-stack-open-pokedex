@@ -5,8 +5,8 @@ on:
     branches:
       - main
     
-  schedule:
-      - cron: '0 */5 * * *'
+  # schedule:
+  #     - cron: '0 */5 * * *'
 
 jobs:
   health-test:
